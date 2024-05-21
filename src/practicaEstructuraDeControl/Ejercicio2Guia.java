@@ -12,8 +12,7 @@ public class Ejercicio2Guia {
 			menu=Integer.parseInt(JOptionPane.showInputDialog("Por favor Ingrese una de las siguiente opciones :\n\n"
 					+ "1. Saludar\n"
 					+ "2. Pedir Nombre de una Persona\n"
-					+ "3. Sumar 2 Numeros\n"
-					+ "4. Salir\n"));
+					+ "3. Sumar 2 Numeros\n"));
 			switch(menu) {
 			case 1:
 				JOptionPane.showMessageDialog(null, saludo);
@@ -28,10 +27,8 @@ public class Ejercicio2Guia {
 				suma=numero1+numero2;
 				JOptionPane.showMessageDialog(null,"La suma de los numeros es"+suma);
 				break;
-			case 4:
-				JOptionPane.showMessageDialog(null,"Gracias por trabajar con nosotros");
-				break;
 			default:
+				JOptionPane.showMessageDialog(null,"La opcion escojida no es valida, vuelve a intentarlo");
 				break;
 				
 			}
